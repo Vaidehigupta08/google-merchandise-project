@@ -1,0 +1,38 @@
+[
+  {
+    "user_id": "1",
+    "nudge_id": "nudge_1_123",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 4,
+    "predicted_cluster": null,
+    "timestamp": "2026-04-01T13:53:45.435896+00:00"
+  },
+  {
+    "user_id": "1",
+    "nudge_id": "nudge_1_123",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 4,
+    "predicted_cluster": null,
+    "timestamp": "2026-04-01T14:03:16.599834+00:00"
+  },
+  {
+    "user_id": "2",
+    "nudge_id": "nudge_1_127",
+    "action": "rejected",
+    "reward": 0.0,
+    "cluster_id": 4,
+    "predicted_cluster": null,
+    "timestamp": "2026-04-01T14:36:32.568586+00:00"
+  },
+  {
+    "user_id": "1",
+    "nudge_id": "nudge_1",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-01T17:10:08.392503+00:00"
+  }
+]

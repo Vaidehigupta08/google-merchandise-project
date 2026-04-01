@@ -1,0 +1,92 @@
+[
+  {
+    "cluster_id": 0,
+    "persona_name": "Curious Explorer",
+    "age_range": "25-40",
+    "shopping_style": "This person is a curious and detail-oriented shopper who likes to explore various product categories before making a purchase. They tend to browse multiple pages before deciding what to buy.",
+    "top_interests": [
+      "Electronics",
+      "Office",
+      "Clothing"
+    ],
+    "purchase_intent": "medium",
+    "nudge_strategy": "Offer a bundle deal on electronics and office accessories to encourage a purchase.",
+    "pain_points": "Finding the right product in their desired category can be challenging due to the overwhelming number of options.",
+    "recommended_offers": [
+      "10% off on speaker bundles",
+      "Free shipping on all office accessories"
+    ]
+  },
+  {
+    "cluster_id": 1,
+    "persona_name": "Young Adventurer Explorer",
+    "age_range": "22-35",
+    "shopping_style": "Young Adventurer Explorers are indecisive shoppers who browse extensively but rarely make a purchase, often getting distracted by multiple interests. They value convenience and are likely to purchase from a retailer that offers a seamless online shopping experience.",
+    "top_interests": [
+      "Electronics",
+      "Clothing",
+      "Accessories"
+    ],
+    "purchase_intent": "medium",
+    "nudge_strategy": "Offer a 'recommended for you' section on the homepage that showcases personalized products based on their browsing history.",
+    "pain_points": "Young Adventurer Explorers struggle with finding the right product amidst a sea of choices, which can lead to cart abandonment.",
+    "recommended_offers": [
+      "Free shipping on orders over $50",
+      "Buy one get one 50% off on select electronics"
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "persona_name": "Creative Product Explorer",
+    "age_range": "22-35",
+    "shopping_style": "This individual is a curious and detail-oriented shopper who enjoys browsing through various categories and products. They are likely to research and compare different options before making a purchase.",
+    "top_interests": [
+      "electronics",
+      "drinkware",
+      "kids"
+    ],
+    "purchase_intent": "medium",
+    "nudge_strategy": "Offer personalized product recommendations based on their browsing history and search queries to increase the likelihood of a purchase.",
+    "pain_points": "Difficulty in finding relevant products and navigating through the website can lead to frustration and abandonment of the shopping cart.",
+    "recommended_offers": [
+      "Free shipping on orders over $50",
+      "10% discount on first purchase with email sign-up"
+    ]
+  },
+  {
+    "cluster_id": 3,
+    "persona_name": "Creative Explorer",
+    "age_range": "18-40",
+    "shopping_style": "This individual is a curious and flexible shopper who enjoys browsing through various product categories, often discovering new items and brands. They tend to be drawn to unique and creative products that offer a sense of individuality and self-expression.",
+    "top_interests": [
+      "Accessories",
+      "Electronics",
+      "Kids"
+    ],
+    "purchase_intent": "medium",
+    "nudge_strategy": "Offer a curated selection of recommended products based on their browsing history to increase the chances of a sale.",
+    "pain_points": "A lack of clear product information and navigation on the website may deter them from making a purchase.",
+    "recommended_offers": [
+      "Free shipping on orders over $75",
+      "Buy one get one 50% off on select accessories"
+    ]
+  },
+  {
+    "cluster_id": 4,
+    "persona_name": "Creative Tech Explorer",
+    "age_range": "22-35",
+    "shopping_style": "This shopper is a curious and tech-savvy individual who enjoys exploring various product categories, often engaging with several products before making a purchase. They tend to have long sessions, browsing multiple pages before deciding what to buy.",
+    "top_interests": [
+      "Electronics",
+      "Office and Stationery",
+      "Kids and Baby"
+    ],
+    "purchase_intent": "high",
+    "nudge_strategy": "Offer personalized product recommendations based on their browsing history and shopping behavior to increase the chances of conversion.",
+    "pain_points": "Friction in the checkout process, such as complex shipping options or unclear payment terms, may deter this shopper from completing their purchase.",
+    "recommended_offers": [
+      "Free shipping on orders over $50",
+      "Buy one get one 50% off on electronics"
+    ]
+  }
+]

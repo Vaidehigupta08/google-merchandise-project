@@ -1,0 +1,9 @@
+{
+    "Clothing": 0,
+    "Accessories": 1,
+    "Bags": 2,
+    "Office": 3,
+    "Electronics": 4,
+    "Drinkware": 5,
+    "Kids": 6
+}
