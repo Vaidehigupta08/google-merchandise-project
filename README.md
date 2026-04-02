@@ -71,6 +71,8 @@ A personalized shopping journey
 Instead of showing the same store to everyone,
 👉 each user gets a unique, adaptive experience based on their behavior.
 
+python -m http.server 5500
+
 ## 🛠️ Tech Stack
 
 * Python, PyTorch, NumPy, Pandas
