@@ -49,6 +49,27 @@ Raw User Clicks → Behavioral Embeddings → Intent Clusters → Future Predict
 * 🔁 Feedback loop for continuous improvement
 
 ---
+## 🎨 Frontend (User Experience Layer)
+
+The frontend is a fully interactive e-commerce interface where users can browse products while the system quietly adapts to their behavior in real time.
+
+As users explore the store, the interface continuously adjusts to their actions.
+Products, suggestions, and messages are dynamically personalized for each user.
+Smart popups appear at the right moment to guide decisions (like offers, urgency, or helpful suggestions).
+The system learns from every interaction and improves the experience instantly.
+
+💡 In simple terms:
+The website doesn’t just show products — it understands the user and responds intelligently.
+
+✨ What Users Experience
+“Recommended for you” products
+Real-time smart suggestions
+Timely offers and alerts
+A personalized shopping journey
+⚡ Key Idea
+
+Instead of showing the same store to everyone,
+👉 each user gets a unique, adaptive experience based on their behavior.
 
 ## 🛠️ Tech Stack
 
