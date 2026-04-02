@@ -34,5 +34,2511 @@
     "cluster_id": 2,
     "predicted_cluster": 3,
     "timestamp": "2026-04-01T17:10:08.392503+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "nudge_650_12719",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T13:05:06.530068+00:00"
+  },
+  {
+    "user_id": "1253",
+    "nudge_id": "nudge_1253_28171",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 1,
+    "predicted_cluster": 1,
+    "timestamp": "2026-04-02T13:09:37.484560+00:00"
+  },
+  {
+    "user_id": "1253",
+    "nudge_id": "nudge_1253_28171",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 1,
+    "predicted_cluster": 1,
+    "timestamp": "2026-04-02T13:10:19.890845+00:00"
+  },
+  {
+    "user_id": "1253",
+    "nudge_id": "nudge_1253_28171",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 1,
+    "predicted_cluster": 1,
+    "timestamp": "2026-04-02T13:10:45.488617+00:00"
+  },
+  {
+    "user_id": "1253",
+    "nudge_id": "nudge_1253_28171",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 1,
+    "predicted_cluster": 1,
+    "timestamp": "2026-04-02T13:11:08.811512+00:00"
+  },
+  {
+    "user_id": "1253",
+    "nudge_id": "nudge_1253_28171",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 1,
+    "predicted_cluster": 1,
+    "timestamp": "2026-04-02T13:11:24.181860+00:00"
+  },
+  {
+    "user_id": "1253",
+    "nudge_id": "nudge_1253_28171",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 1,
+    "predicted_cluster": 1,
+    "timestamp": "2026-04-02T13:11:48.472309+00:00"
+  },
+  {
+    "user_id": "1253",
+    "nudge_id": "beh_1253_3_2",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 3,
+    "predicted_cluster": 1,
+    "timestamp": "2026-04-02T13:12:10.087316+00:00"
+  },
+  {
+    "user_id": "1253",
+    "nudge_id": "beh_1253_3_3",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 3,
+    "predicted_cluster": 1,
+    "timestamp": "2026-04-02T13:12:24.479974+00:00"
+  },
+  {
+    "user_id": "1253",
+    "nudge_id": "beh_1253_3_4",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 3,
+    "predicted_cluster": 1,
+    "timestamp": "2026-04-02T13:12:48.468076+00:00"
+  },
+  {
+    "user_id": "1253",
+    "nudge_id": "beh_1253_3_4",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 3,
+    "predicted_cluster": 1,
+    "timestamp": "2026-04-02T13:13:07.875710+00:00"
+  },
+  {
+    "user_id": "1253",
+    "nudge_id": "beh_1253_3_5",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 3,
+    "predicted_cluster": 1,
+    "timestamp": "2026-04-02T13:13:24.483516+00:00"
+  },
+  {
+    "user_id": "1253",
+    "nudge_id": "beh_1253_3_5",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 3,
+    "predicted_cluster": 1,
+    "timestamp": "2026-04-02T13:13:49.795737+00:00"
+  },
+  {
+    "user_id": "1253",
+    "nudge_id": "beh_1253_3_5",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 3,
+    "predicted_cluster": 1,
+    "timestamp": "2026-04-02T13:14:13.295446+00:00"
+  },
+  {
+    "user_id": "1253",
+    "nudge_id": "beh_1253_3_6",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 3,
+    "predicted_cluster": 1,
+    "timestamp": "2026-04-02T13:14:36.463732+00:00"
+  },
+  {
+    "user_id": "1253",
+    "nudge_id": "beh_1253_3_6",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 3,
+    "predicted_cluster": 1,
+    "timestamp": "2026-04-02T13:14:48.174514+00:00"
+  },
+  {
+    "user_id": "1253",
+    "nudge_id": "beh_1253_3_6",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 3,
+    "predicted_cluster": 1,
+    "timestamp": "2026-04-02T13:15:05.640299+00:00"
+  },
+  {
+    "user_id": "1253",
+    "nudge_id": "beh_1253_3_7",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 3,
+    "predicted_cluster": 1,
+    "timestamp": "2026-04-02T13:15:17.482450+00:00"
+  },
+  {
+    "user_id": "1253",
+    "nudge_id": "beh_1253_3_8",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 3,
+    "predicted_cluster": 1,
+    "timestamp": "2026-04-02T13:15:36.508962+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "beh_650_3_4",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 3,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T13:15:44.420597+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "beh_650_3_5",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 3,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T13:16:03.820578+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "beh_650_3_5",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 3,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T13:16:35.494047+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "beh_650_3_5",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 3,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T13:17:05.487808+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "beh_650_3_5",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 3,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T13:17:35.483332+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "beh_650_3_5",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 3,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T13:18:05.490880+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "beh_650_3_5",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 3,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T13:18:59.489956+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "beh_650_3_5",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 3,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T13:19:54.975112+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "beh_650_3_6",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 3,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T13:20:12.490125+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "beh_650_3_6",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 3,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T13:20:37.481249+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "beh_650_3_6",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 3,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T13:21:00.808635+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775136152554",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T13:22:32.873300+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775136158233",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T13:22:38.238105+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775136260106",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T13:24:20.425973+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775136269608",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T13:24:29.611683+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775136647093",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T13:30:47.417288+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775136656597",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T13:30:56.600163+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775137079905",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T13:38:00.225613+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775137089478",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T13:38:09.480924+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775138235243",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T13:57:15.564404+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775138240005",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T13:57:20.008064+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775138844773",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:07:25.097328+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775138854282",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:07:34.285544+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775138857908",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:07:37.912105+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775138867420",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:07:47.423950+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775138870131",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:07:50.134704+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775138879634",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:07:59.943279+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775138886832",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:08:06.835957+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775138896341",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:08:16.661073+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775139110224",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T14:11:50.530977+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775139119729",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T14:11:59.732459+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775139425479",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T14:17:05.799108+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775139429363",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T14:17:09.366260+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775139693866",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T14:21:33.905928+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775139695712",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T14:21:35.714662+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775139709331",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T14:21:49.339421+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775139713925",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T14:21:53.927481+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775139723718",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T14:22:03.721657+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775139736506",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T14:22:16.823978+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775139740136",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T14:22:20.138380+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775139754973",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T14:22:34.976860+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775139758585",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T14:22:38.588340+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775139761556",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T14:22:41.560311+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775139782775",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T14:23:03.093335+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775139802829",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:23:22.832473+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775139813601",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:23:33.604537+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775139841492",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:24:01.810420+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775139886463",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:24:46.779471+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775139946051",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:25:46.365735+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775139956936",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:25:56.939373+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775139972619",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:26:12.623148+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775139993667",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:26:33.670156+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140000194",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:26:40.197911+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140022423",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:27:02.425206+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140077478",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:27:57.809010+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140266732",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:31:06.736668+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140269359",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:31:09.361411+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140307423",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:31:47.466885+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140317023",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:31:57.025115+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140367333",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:32:47.655533+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140376843",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:32:56.848512+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140383206",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:33:03.211528+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140401333",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:33:21.336129+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140414957",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:33:34.961049+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140477416",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:34:37.420401+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140482577",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:34:42.888869+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140485991",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:34:45.996941+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140487938",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:34:47.941825+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140500795",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:35:00.797767+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140513414",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:35:13.733396+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140517429",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:35:17.431702+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140540105",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:35:40.109233+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140594883",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:36:34.885861+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140640481",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:37:20.483730+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140940820",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:42:20.825706+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775140985453",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:43:05.770603+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775141522740",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:52:02.742077+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775141532396",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:52:12.399087+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775141537892",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:52:18.198785+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775141542685",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:52:22.692924+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775141545434",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:52:25.437852+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775141557122",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:52:37.125140+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775141563034",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:52:43.037101+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775141564466",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:52:44.470362+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775141619482",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:53:39.802383+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775141882271",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:58:02.275593+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775141894491",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:58:14.494700+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775141936486",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:58:56.490583+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775141981481",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T14:59:41.483601+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775142037488",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:00:37.492036+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775142083482",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:01:23.486322+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775142117985",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:01:58.307567+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775142122207",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:02:02.209804+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775142127874",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:02:07.878408+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775142177479",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:02:57.488238+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775142252408",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:04:12.725609+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775142261913",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:04:21.915204+00:00"
+  },
+  {
+    "user_id": "43",
+    "nudge_id": "nudge_43_72685",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 3,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T15:04:50.225664+00:00"
+  },
+  {
+    "user_id": "43",
+    "nudge_id": "nudge_43_72685",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 3,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T15:05:18.504535+00:00"
+  },
+  {
+    "user_id": "43",
+    "nudge_id": "nudge_43_72685",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 3,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T15:06:03.522297+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775142404318",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:06:44.320804+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775142449624",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T15:07:29.627324+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775142471070",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T15:07:51.388132+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775142473235",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T15:07:53.240646+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775142497178",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T15:08:17.181561+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775142518217",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T15:08:38.219001+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775142534395",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T15:08:54.397810+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775142569976",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:09:30.281593+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775142579483",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:09:39.485738+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775142610606",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:10:10.609422+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775142634698",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:10:34.701203+00:00"
+  },
+  {
+    "user_id": "42",
+    "nudge_id": "nudge_42_09145",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 4,
+    "predicted_cluster": 4,
+    "timestamp": "2026-04-02T15:13:48.208012+00:00"
+  },
+  {
+    "user_id": "24",
+    "nudge_id": "nudge_24_44869",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 1,
+    "predicted_cluster": 1,
+    "timestamp": "2026-04-02T15:14:41.409990+00:00"
+  },
+  {
+    "user_id": "user_42",
+    "nudge_id": "evt_user_42_1775142908717",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": null,
+    "predicted_cluster": null,
+    "timestamp": "2026-04-02T15:15:08.722918+00:00"
+  },
+  {
+    "user_id": "user_42",
+    "nudge_id": "evt_user_42_1775142964492",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": null,
+    "predicted_cluster": null,
+    "timestamp": "2026-04-02T15:16:04.813042+00:00"
+  },
+  {
+    "user_id": "user_42",
+    "nudge_id": "evt_user_42_1775143014468",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": null,
+    "predicted_cluster": null,
+    "timestamp": "2026-04-02T15:16:54.773388+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775143047847",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:17:28.165964+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775143051726",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:17:31.729865+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775143053343",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:17:33.347277+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775143079303",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:17:59.307430+00:00"
+  },
+  {
+    "user_id": "42",
+    "nudge_id": "nudge_42_09145",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 4,
+    "predicted_cluster": 4,
+    "timestamp": "2026-04-02T15:18:36.586708+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775143164222",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:19:24.226042+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775143180323",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:19:40.642348+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775143189826",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:19:49.829051+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775143211413",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:20:11.416489+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775143278487",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:21:18.491920+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775143408697",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:23:29.013528+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775143454493",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:24:14.807094+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775143687492",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:28:07.495199+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775143732489",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T15:28:52.491773+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775148051286",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T16:40:51.626786+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775148060790",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T16:41:00.796390+00:00"
+  },
+  {
+    "user_id": "user_42",
+    "nudge_id": "evt_user_42_1775148086404",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": null,
+    "predicted_cluster": null,
+    "timestamp": "2026-04-02T16:41:26.406664+00:00"
+  },
+  {
+    "user_id": "user_42",
+    "nudge_id": "evt_user_42_1775148152174",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": null,
+    "predicted_cluster": null,
+    "timestamp": "2026-04-02T16:42:32.177014+00:00"
+  },
+  {
+    "user_id": "user_42",
+    "nudge_id": "evt_user_42_1775148216488",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": null,
+    "predicted_cluster": null,
+    "timestamp": "2026-04-02T16:43:36.794905+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775148265604",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T16:44:25.913939+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775148279690",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T16:44:39.692727+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775148282055",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T16:44:42.058225+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775148310199",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T16:45:10.201754+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775148355481",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T16:45:55.484695+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775148660483",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T16:51:00.496938+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775148706481",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T16:51:46.796806+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775149150961",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T16:59:10.963282+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775149177064",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T16:59:37.067025+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775149222490",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T17:00:22.493902+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775149389688",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T17:03:09.693058+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775149408286",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T17:03:28.290404+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775149411700",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T17:03:31.703036+00:00"
+  },
+  {
+    "user_id": "user_42",
+    "nudge_id": "evt_user_42_1775149433911",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": null,
+    "predicted_cluster": null,
+    "timestamp": "2026-04-02T17:03:53.913400+00:00"
+  },
+  {
+    "user_id": "user_42",
+    "nudge_id": "evt_user_42_1775149466547",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": null,
+    "predicted_cluster": null,
+    "timestamp": "2026-04-02T17:04:26.549307+00:00"
+  },
+  {
+    "user_id": "user_42",
+    "nudge_id": "evt_user_42_1775149492489",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": null,
+    "predicted_cluster": null,
+    "timestamp": "2026-04-02T17:04:52.493929+00:00"
+  },
+  {
+    "user_id": "user_42",
+    "nudge_id": "evt_user_42_1775149537491",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": null,
+    "predicted_cluster": null,
+    "timestamp": "2026-04-02T17:05:37.502027+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775150043778",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T17:14:03.786990+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775150056380",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T17:14:16.383125+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775150059496",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T17:14:19.501117+00:00"
+  },
+  {
+    "user_id": "32",
+    "nudge_id": "nudge_32_21176",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T17:14:55.748317+00:00"
+  },
+  {
+    "user_id": "32",
+    "nudge_id": "nudge_32_21176",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T17:15:50.621684+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775150558480",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T17:22:38.486135+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775150564356",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T17:22:44.361187+00:00"
+  },
+  {
+    "user_id": "650",
+    "nudge_id": "evt_650_1775150566587",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 0,
+    "predicted_cluster": 3,
+    "timestamp": "2026-04-02T17:22:46.589818+00:00"
+  },
+  {
+    "user_id": "42",
+    "nudge_id": "nudge_42_09145",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 4,
+    "predicted_cluster": 4,
+    "timestamp": "2026-04-02T17:23:16.197165+00:00"
+  },
+  {
+    "user_id": "42",
+    "nudge_id": "nudge_42_09145",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 4,
+    "predicted_cluster": 4,
+    "timestamp": "2026-04-02T17:23:38.758383+00:00"
+  },
+  {
+    "user_id": "42",
+    "nudge_id": "nudge_42_09145",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 4,
+    "predicted_cluster": 4,
+    "timestamp": "2026-04-02T17:24:06.657277+00:00"
+  },
+  {
+    "user_id": "42",
+    "nudge_id": "nudge_42_09145",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 4,
+    "predicted_cluster": 4,
+    "timestamp": "2026-04-02T17:24:16.485032+00:00"
+  },
+  {
+    "user_id": "42",
+    "nudge_id": "nudge_42_09145",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 4,
+    "predicted_cluster": 4,
+    "timestamp": "2026-04-02T17:25:02.490608+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775151981052",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T17:46:21.059627+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775152024819",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T17:47:04.822687+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775152034322",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T17:47:14.629050+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775152079373",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T17:47:59.685503+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775152103346",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T17:48:23.654018+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775152126737",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T17:48:47.051484+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775152148783",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T17:49:09.093121+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775152226525",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T17:50:26.529218+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775152245467",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T17:50:45.470294+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775152290469",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T17:51:30.474478+00:00"
+  },
+  {
+    "user_id": "6",
+    "nudge_id": "nudge_6_07749",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 0,
+    "predicted_cluster": 0,
+    "timestamp": "2026-04-02T17:51:53.188009+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775154880883",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T18:34:41.220508+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775154896806",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T18:34:56.809853+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775154952493",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T18:35:52.497698+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775155047443",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T18:37:27.459632+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775155116348",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T18:38:36.352072+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775155178765",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T18:39:38.769578+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775155238352",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T18:40:38.356243+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775155458375",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T18:44:18.378851+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775155521478",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T18:45:21.485890+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775155585283",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T18:46:25.588073+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775155621518",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T18:47:01.521115+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775155631480",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T18:47:11.785024+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775155677482",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T18:47:57.790414+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775155900180",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T18:51:40.185761+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775155926970",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T18:52:06.972674+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775155979492",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T18:52:59.496076+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775156044443",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T18:54:04.447105+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775156066484",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T18:54:26.487484+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775156115479",
+    "action": "ignored",
+    "reward": 0.3,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T18:55:15.483582+00:00"
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157107857",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:11:48.198711+00:00",
+    "meta": {
+      "product": {
+        "id": 1,
+        "name": "Google Classic Tee",
+        "cat": "Apparel"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157114002",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:11:54.007901+00:00",
+    "meta": {
+      "product": {
+        "id": 3,
+        "name": "Google Backpack",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157117593",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:11:57.596881+00:00",
+    "meta": {
+      "product": {
+        "id": 1,
+        "name": "Google Classic Tee",
+        "cat": "Apparel"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157125548",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:12:05.869028+00:00",
+    "meta": {
+      "product": {
+        "id": 3,
+        "name": "Google Backpack",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157128903",
+    "action": "ignored",
+    "reward": -0.5,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:12:08.935995+00:00",
+    "meta": {}
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157129716",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:12:09.719597+00:00",
+    "meta": {
+      "product": {
+        "id": 5,
+        "name": "Google Spiral Notebook",
+        "cat": "Office"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157133445",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:12:13.447788+00:00",
+    "meta": {
+      "product": {
+        "id": 2,
+        "name": "Google Zip Hoodie",
+        "cat": "Apparel"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157190491",
+    "action": "ignored",
+    "reward": -0.5,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:13:10.810796+00:00",
+    "meta": {}
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157227961",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:13:47.964375+00:00",
+    "meta": {
+      "product": {
+        "id": 3,
+        "name": "Google Backpack",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157239276",
+    "action": "ignored",
+    "reward": -0.5,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:13:59.590544+00:00",
+    "meta": {}
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157241253",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:14:01.257247+00:00",
+    "meta": {
+      "product": {
+        "id": 4,
+        "name": "Google Stainless Tumbler",
+        "cat": "Drinkware"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157248003",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:14:08.007176+00:00",
+    "meta": {}
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157251021",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:14:11.023670+00:00",
+    "meta": {}
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157254253",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:14:14.257004+00:00",
+    "meta": {
+      "product": {
+        "id": 5,
+        "name": "Google Spiral Notebook",
+        "cat": "Office"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157261288",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:14:21.592194+00:00",
+    "meta": {
+      "product": {
+        "id": 3,
+        "name": "Google Backpack",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157264077",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:14:24.080838+00:00",
+    "meta": {
+      "product": {
+        "id": 8,
+        "name": "Google Cap",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157266673",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:14:26.678643+00:00",
+    "meta": {
+      "product": {
+        "id": 3,
+        "name": "Google Backpack",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157268965",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:14:28.969221+00:00",
+    "meta": {
+      "product": {
+        "id": 9,
+        "name": "Gucci Bloom Eau de",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157275663",
+    "action": "accepted",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:14:35.981023+00:00",
+    "meta": {}
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157280202",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:14:40.205239+00:00",
+    "meta": {
+      "product": {
+        "id": 14,
+        "name": "Chopping Board",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157287240",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:14:47.242847+00:00",
+    "meta": {
+      "product": {
+        "id": 15,
+        "name": "Citrus Squeezer Yellow",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157291098",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:14:51.101365+00:00",
+    "meta": {
+      "product": {
+        "id": 16,
+        "name": "Egg Slicer",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157302481",
+    "action": "ignored",
+    "reward": -0.5,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:15:02.485308+00:00",
+    "meta": {}
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157347808",
+    "action": "ignored",
+    "reward": -0.5,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:15:47.812844+00:00",
+    "meta": {}
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157349099",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:15:49.101975+00:00",
+    "meta": {
+      "product": {
+        "id": 3,
+        "name": "Google Backpack",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157350911",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:15:50.913461+00:00",
+    "meta": {
+      "product": {
+        "id": 8,
+        "name": "Google Cap",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157352501",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:15:52.504137+00:00",
+    "meta": {
+      "product": {
+        "id": 3,
+        "name": "Google Backpack",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157354335",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:15:54.338237+00:00",
+    "meta": {
+      "product": {
+        "id": 8,
+        "name": "Google Cap",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157356326",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:15:56.328602+00:00",
+    "meta": {
+      "product": {
+        "id": 3,
+        "name": "Google Backpack",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157357952",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:15:57.955773+00:00",
+    "meta": {
+      "product": {
+        "id": 8,
+        "name": "Google Cap",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157359595",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:15:59.598094+00:00",
+    "meta": {
+      "product": {
+        "id": 3,
+        "name": "Google Backpack",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157366537",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:16:06.855176+00:00",
+    "meta": {
+      "product": {
+        "id": 8,
+        "name": "Google Cap",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157368667",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:16:08.670275+00:00",
+    "meta": {
+      "product": {
+        "id": 3,
+        "name": "Google Backpack",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157370529",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:16:10.532093+00:00",
+    "meta": {
+      "product": {
+        "id": 8,
+        "name": "Google Cap",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157370874",
+    "action": "ignored",
+    "reward": -0.5,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:16:10.877525+00:00",
+    "meta": {}
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157373115",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:16:13.117913+00:00",
+    "meta": {
+      "product": {
+        "id": 3,
+        "name": "Google Backpack",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157374821",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:16:14.825235+00:00",
+    "meta": {
+      "product": {
+        "id": 8,
+        "name": "Google Cap",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157379044",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:16:19.046739+00:00",
+    "meta": {
+      "product": {
+        "id": 9,
+        "name": "Gucci Bloom Eau de",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157382621",
+    "action": "product_view",
+    "reward": 1.0,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:16:22.625758+00:00",
+    "meta": {
+      "product": {
+        "id": 3,
+        "name": "Google Backpack",
+        "cat": "Accessories"
+      }
+    }
+  },
+  {
+    "user_id": "118",
+    "nudge_id": "evt_118_1775157396478",
+    "action": "ignored",
+    "reward": -0.5,
+    "cluster_id": 2,
+    "predicted_cluster": 2,
+    "timestamp": "2026-04-02T19:16:36.799898+00:00",
+    "meta": {}
   }
 ]

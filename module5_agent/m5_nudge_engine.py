@@ -301,13 +301,37 @@ Return JSON:
 
 # ── Public API ────────────────────────────────────────────────────────
 
-def get_nudge_for_user(user_id: str) -> dict:
+def _generate_override_nudge(user_id: str, override: dict) -> dict:
+    """Mock a prediction object out of override intent to get a dynamic nudge."""
+    prediction = {
+        "user_id": user_id,
+        "predicted_category": override.get("category"),
+        "predicted_cluster": override.get("cluster_id")
+    }
+
+    if LLM_PROVIDER == "placeholder":
+        nudge = _rule_nudge(user_id, prediction)
+    else:
+        try:
+            nudge = _llm_nudge(user_id, prediction)
+        except Exception:
+            nudge = _rule_nudge(user_id, prediction)
+    
+    nudge["mode"] = "dynamic_override"
+    return nudge
+
+
+def get_nudge_for_user(user_id: str, override: dict = None) -> dict:
     """
     Get nudge for a single user.
-    1. Check nudge_cache.json first (pre-generated)
-    2. If not cached, generate on-the-fly from predictions
-    3. If no prediction found, return default nudge
+    1. If override is provided, generate a nudge dynamically based on override.
+    2. Check nudge_cache.json first (pre-generated)
+    3. If not cached, generate on-the-fly from predictions
+    4. If no prediction found, return default nudge
     """
+    if override:
+        return _generate_override_nudge(user_id, override)
+
     cache = load_nudge_cache()
     nudge = cache.get(str(user_id))
 

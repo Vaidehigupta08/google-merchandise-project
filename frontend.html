@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+﻿<!DOCTYPE html>
+=======
 <!DOCTYPE html>
+>>>>>>> eeae87a888859c90f078bf8349f1299d31e6b61b
 <html lang="en">
 <head>
 <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
@@ -1025,6 +1029,14 @@ function maybeTriggerPredictedAction(type,meta){
 function trackEvent(type,meta={}){
   eventLog.push({type,meta,t:Date.now()});
   saveEventLog();
+<<<<<<< HEAD
+  
+  if (['product_view', 'cart_add', 'page_view'].includes(type)){
+    postFeedback(type, meta);
+  }
+
+=======
+>>>>>>> eeae87a888859c90f078bf8349f1299d31e6b61b
   maybeTriggerPredictedAction(type,meta);
   applyBehaviorPersonalization(false);
   evaluateApiPopupTriggers(type,meta);
@@ -1556,11 +1568,19 @@ function dismissNudge(){
   document.getElementById('nudge-popup').style.display='none';
 }
 
+<<<<<<< HEAD
+async function postFeedback(action, meta={}){
+  if(!userData&&!loggedInUser)return;
+  const uid=String(userData?.user_id||getApiUserId()||loggedInUser?.user_id||'guest');
+  const nid=String(userData?.nudge?.nudge_id||`evt_${uid}_${Date.now()}`);
+  const body={user_id:uid,nudge_id:nid,action,cluster_id:userData?.cluster_id??null,meta};
+=======
 async function postFeedback(action){
   if(!userData&&!loggedInUser)return;
   const uid=String(userData?.user_id||getApiUserId()||loggedInUser?.user_id||'guest');
   const nid=String(userData?.nudge?.nudge_id||`evt_${uid}_${Date.now()}`);
   const body={user_id:uid,nudge_id:nid,action,cluster_id:userData?.cluster_id??null};
+>>>>>>> eeae87a888859c90f078bf8349f1299d31e6b61b
   try{await fetch(`${API}/feedback`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)})}
   catch(e){console.log('📤 Feedback(offline):',action)}
 }
@@ -1744,4 +1764,8 @@ window.addEventListener('load',()=>{
 });
 </script>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> eeae87a888859c90f078bf8349f1299d31e6b61b

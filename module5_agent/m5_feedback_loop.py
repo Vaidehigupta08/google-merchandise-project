@@ -1,36 +1,18 @@
 """
-feedback_loop.py
-================
-Module 5 — Reward-Guided Feedback Loop (RG-CFM)
+feedback_loop.py — Module 5 (FIXED)
 
-When a user accepts or rejects a nudge on the live site,
-that signal is captured as a reward score and logged.
-
-These reward scores are used to:
-  1. Log and persist all feedback events
-  2. Compute per-cluster reward statistics
-  3. Trigger Module 4 model retraining with reward weights
-     (Reward-Guided CFM = RG-CFM as described in temp.md)
-
-Reward schema:
-{
-  "user_id":     "42",
-  "nudge_id":    "nudge_42_1711234567",
-  "action":      "accepted" | "rejected" | "ignored",
-  "reward":      1.0 | 0.0 | 0.3,
-  "cluster_id":  2,
-  "predicted_cluster": 1,
-  "timestamp":   "2026-03-30T12:00:00"
-}
+Fixes:
+1. min_feedback_events = 10 (100 se kam — realistic threshold)
+2. compute_reward_weights() auto-called on every log_feedback
+3. get_cluster_reward_stats() mein acceptance_rate properly shown
 """
 
 import json
 import os
-import time
 from datetime import datetime, timezone
 from collections import defaultdict
 
-from module5_agent.m5_data_loader import load_cluster_map, get_predictions_by_user
+from module5_agent.m5_data_loader import load_cluster_map, get_predictions_by_user, load_intents
 
 
 BASE         = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -38,39 +20,74 @@ LOG_PATH     = os.path.join(BASE, "module5_agent", "outputs", "reward_log.json")
 WEIGHTS_PATH = os.path.join(BASE, "module5_agent", "outputs", "reward_weights.json")
 
 
-# ── Reward mapping ─────────────────────────────────────────────────────
-
 REWARD_MAP = {
-    "accepted": 1.0,    # user clicked nudge → strong positive signal
-    "rejected": 0.0,    # user dismissed nudge → negative signal
-    "ignored":  0.3,    # nudge shown but no interaction → weak signal
+    "accepted": 1.0,
+    "rejected": -1.0,
+    "ignored":  -0.5,
+    "cart_add": 3.0,
+    "product_view": 1.0,
+    "page_view": 0.5
 }
 
+def get_user_dynamic_intent(user_id: str, min_events: int = 2) -> dict:
+    """Analyze recent user events strictly to override stale offline clusters."""
+    log = _load_log()
+    user_events = [e for e in log if str(e.get("user_id")) == str(user_id)]
+    if len(user_events) < min_events:
+        return None
 
-# ── Core feedback functions ────────────────────────────────────────────
+    cat_scores = defaultdict(float)
+    
+    # Process last 80 actions for intent
+    for ev in user_events[-80:]:
+        action = ev.get("action", "")
+        meta = ev.get("meta", {})
+        cat = meta.get("category")
+        
+        # fallback if product.cat is inside meta.product instead
+        if not cat and meta.get("product"):
+            cat = meta["product"].get("cat")
+
+        if cat:
+            weight = REWARD_MAP.get(action, 0.5)
+            cat_scores[cat] += weight
+
+    if not cat_scores:
+        return None
+
+    # Get highest scoring category
+    top_cat = max(cat_scores.items(), key=lambda x: x[1])[0]
+    
+    # Try mapping back to a cluster_id if possible
+    intents = load_intents()
+    best_cid = None
+    for cid_str, info in (intents or {}).items():
+        if info.get("name") == top_cat:
+            best_cid = int(cid_str)
+            break
+            
+    return {"category": top_cat, "cluster_id": best_cid, "score": cat_scores[top_cat]}
+
 
 def log_feedback(
     user_id:   str,
     nudge_id:  str,
-    action:    str,           # "accepted" | "rejected" | "ignored"
+    action:    str,
     cluster_id: int = None,
     predicted_cluster: int = None,
+    meta: dict = None
 ) -> dict:
-    """
-    Record a single feedback event to reward_log.json.
-    Called by the FastAPI endpoint when frontend reports user action.
-    """
     if action not in REWARD_MAP:
-        raise ValueError(f"Invalid action '{action}'. Must be: accepted, rejected, ignored")
+        # Accept custom actions like page_view, cart_add dynamically too
+        if action not in ["page_view", "product_view", "cart_add"]:
+            raise ValueError(f"Invalid action '{action}'.")
 
-    reward = REWARD_MAP[action]
+    reward = REWARD_MAP.get(action, 0.5)
 
-    # Auto-resolve cluster_id if not provided
     if cluster_id is None:
         cmap = load_cluster_map()
         cluster_id = cmap.get(str(user_id))
 
-    # Auto-resolve predicted_cluster if not provided
     if predicted_cluster is None:
         preds = get_predictions_by_user()
         pred  = preds.get(str(user_id), {})
@@ -84,9 +101,9 @@ def log_feedback(
         "cluster_id":        cluster_id,
         "predicted_cluster": predicted_cluster,
         "timestamp":         datetime.now(timezone.utc).isoformat(),
+        "meta":              meta or {}
     }
 
-    # Append to log file (thread-safe append)
     os.makedirs(os.path.dirname(LOG_PATH), exist_ok=True)
     existing = _load_log()
     existing.append(event)
@@ -94,46 +111,34 @@ def log_feedback(
     with open(LOG_PATH, "w") as f:
         json.dump(existing, f, indent=2)
 
+    # FIX: Auto-compute weights after every N events (not just on explicit trigger)
+    if len(existing) % 5 == 0:  # every 5 events update weights
+        compute_reward_weights()
+
     return event
 
 
 def _load_log() -> list:
-    """Load existing reward log or return empty list."""
     if not os.path.exists(LOG_PATH):
         return []
     with open(LOG_PATH) as f:
         return json.load(f)
 
 
-# ── Reward weight computation (RG-CFM) ────────────────────────────────
-
 def compute_reward_weights() -> dict:
-    """
-    Compute per-user importance weights from feedback history.
-    These weights are passed to Module 4 retraining (RG-CFM).
-
-    Formula:
-        w(user) = avg(reward) across all their feedback events
-        Normalized so mean weight = 1.0 across all users.
-
-    Returns: {user_id: weight}
-    """
     log = _load_log()
     if not log:
         return {}
 
-    # Aggregate rewards per user
     user_rewards = defaultdict(list)
     for event in log:
         user_rewards[event["user_id"]].append(event["reward"])
 
-    # Average reward per user
     raw_weights = {
         uid: sum(rewards) / len(rewards)
         for uid, rewards in user_rewards.items()
     }
 
-    # Normalize: mean weight = 1.0
     if raw_weights:
         mean_w = sum(raw_weights.values()) / len(raw_weights)
         mean_w = max(mean_w, 1e-8)
@@ -141,7 +146,6 @@ def compute_reward_weights() -> dict:
     else:
         weights = {}
 
-    # Save weights file (Module 4 train.py reads this)
     os.makedirs(os.path.dirname(WEIGHTS_PATH), exist_ok=True)
     with open(WEIGHTS_PATH, "w") as f:
         json.dump(weights, f, indent=2)
@@ -151,13 +155,15 @@ def compute_reward_weights() -> dict:
 
 
 def get_cluster_reward_stats() -> dict:
-    """
-    Return per-cluster acceptance stats for monitoring.
-    Useful for FastAPI /stats endpoint.
-    """
     log = _load_log()
+    
+    # FIX: Return summary even when log is empty
     if not log:
-        return {}
+        return {
+            "total_events": 0,
+            "message": "No feedback logged yet. POST to /feedback to start.",
+            "clusters": {}
+        }
 
     cluster_stats = defaultdict(lambda: {"accepted": 0, "rejected": 0, "ignored": 0, "total": 0})
 
@@ -167,7 +173,6 @@ def get_cluster_reward_stats() -> dict:
             cluster_stats[cid][event["action"]] += 1
             cluster_stats[cid]["total"] += 1
 
-    # Add acceptance rate
     result = {}
     for cid, s in cluster_stats.items():
         total = s["total"] or 1
@@ -176,27 +181,26 @@ def get_cluster_reward_stats() -> dict:
             "acceptance_rate": round(s["accepted"] / total, 3),
         }
 
-    return result
+    return {
+        "total_events": len(log),
+        "clusters": result,
+        # FIX: Overall stats added
+        "overall_acceptance_rate": round(
+            sum(1 for e in log if e["action"] == "accepted") / len(log), 3
+        ),
+    }
 
 
-# ── Retrain trigger ────────────────────────────────────────────────────
-
-def should_retrain(min_feedback_events: int = 100) -> bool:
-    """
-    Returns True if enough new feedback has accumulated
-    to warrant retraining Module 4.
-    """
+# FIX: Threshold 100 → 10 (realistic for development/early prod)
+def should_retrain(min_feedback_events: int = 10) -> bool:
     log = _load_log()
     return len(log) >= min_feedback_events
 
 
 def trigger_retrain():
-    """
-    Computes reward weights and writes a retrain_flag.json
-    that Module 4 train.py checks before training.
-    """
     if not should_retrain():
-        print("⏳ Not enough feedback yet to retrain.")
+        log_count = len(_load_log())
+        print(f"⏳ Not enough feedback yet ({log_count}/10 events). Keep collecting.")
         return False
 
     weights = compute_reward_weights()
@@ -205,11 +209,11 @@ def trigger_retrain():
     os.makedirs(os.path.dirname(flag_path), exist_ok=True)
     with open(flag_path, "w") as f:
         json.dump({
-            "trigger":        True,
-            "n_events":       len(_load_log()),
-            "n_users":        len(weights),
-            "weights_path":   WEIGHTS_PATH,
-            "triggered_at":   datetime.now(timezone.utc).isoformat(),
+            "trigger":      True,
+            "n_events":     len(_load_log()),
+            "n_users":      len(weights),
+            "weights_path": WEIGHTS_PATH,
+            "triggered_at": datetime.now(timezone.utc).isoformat(),
         }, f, indent=2)
 
     print(f"🔁 Retrain triggered → {flag_path}")

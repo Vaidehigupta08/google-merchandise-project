@@ -33,6 +33,7 @@ from module5_agent.m5_nudge_engine import (
 )
 from module5_agent.m5_feedback_loop import (
     log_feedback,
+    get_user_dynamic_intent,
     get_cluster_reward_stats,
     trigger_retrain,
     compute_reward_weights,
@@ -63,6 +64,7 @@ class FeedbackRequest(BaseModel):
     action: str
     cluster_id: Optional[int] = None
     predicted_cluster: Optional[int] = None
+    meta: Optional[dict] = None
 
 
 class NudgeGenerateRequest(BaseModel):
@@ -82,7 +84,8 @@ def root():
 
 @app.get("/nudge/{user_id}")
 def get_nudge(user_id: str):
-    return get_nudge_for_user(user_id)
+    override_intent = get_user_dynamic_intent(user_id)
+    return get_nudge_for_user(user_id, override=override_intent)
 
 
 @app.post("/feedback")
@@ -94,6 +97,7 @@ def submit_feedback(req: FeedbackRequest):
             action=req.action,
             cluster_id=req.cluster_id,
             predicted_cluster=req.predicted_cluster,
+            meta=req.meta
         )
         return {"status": "logged", "event": event}
     except ValueError as e:
@@ -146,14 +150,22 @@ def generate_nudges(req: NudgeGenerateRequest, background_tasks: BackgroundTasks
 def get_user_profile(user_id: str):
     cmap        = load_cluster_map()
     cluster_id  = cmap.get(str(user_id))
-    nudge       = get_nudge_for_user(user_id)
-    persona     = get_persona_for_cluster(cluster_id) if cluster_id is not None else None
+    
+    override_intent = get_user_dynamic_intent(user_id)
+    nudge       = get_nudge_for_user(user_id, override=override_intent)
+    
+    # If dynamic override is there, persona should match that cluster if available
+    override_cluster = override_intent.get("cluster_id") if override_intent else None
+    display_cluster = override_cluster if override_cluster is not None else cluster_id
+
+    persona     = get_persona_for_cluster(display_cluster) if display_cluster is not None else None
 
     return {
         "user_id":    user_id,
-        "cluster_id": cluster_id,
+        "cluster_id": display_cluster,
         "persona":    persona,
         "nudge":      nudge,
+        "dynamic_override": bool(override_intent)
     }
 
 
