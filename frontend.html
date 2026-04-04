@@ -687,7 +687,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:2rem;display:f
 <div id="toast">Done!</div>
 
 <script>
-const API='http://localhost:8000';
+const API='https://google-merchandise-project.onrender.com';
 const BACKEND_ONLY_RECOMMENDATIONS=true;
 let userData=null,cartItems=[],wishItems=[],nudgeTimer=null,currentProduct=null,activeFilter='All';
 let loggedInUser=null;
@@ -801,7 +801,7 @@ function rankProductsByAI(){
     if(i.includes('kids')||i.includes('baby'))catHits.Accessories++;
   });
 
-  const source=modelCats.length?PRODS.filter(p=>modelCats.includes(p.cat)):PRODS;
+  const source=PRODS;
   const scored=source.map(p=>{
     let s=(catHits[p.cat]||0)*4;
     if(CORE_PRODUCT_IDS.has(p.id))s+=12;
@@ -906,7 +906,23 @@ async function triggerApiNudgePopup(reason,payload={}){
     if (payload && payload.product && payload.product.cat) {
       if (mapped.nudge_text) mapped.nudge_text = mapped.nudge_text.replace(/electronics/ig, payload.product.cat);
       if (mapped.message) mapped.message = mapped.message.replace(/electronics/ig, payload.product.cat);
-      mapped.predicted_urls = [payload.product.cat];
+      
+      // Since API might return a generic message, force a dynamic one based on user action
+      const cat = payload.product.cat;
+      if (reason === 'atc' || reason === 'discount') {
+        mapped.nudge_text = `${payload.product.name} is a great choice! Add more ${cat} items for special savings.`;
+        mapped.type = 'discount';
+        mapped.cta = 'View Details';
+      } else if (reason === 'urgency') {
+        mapped.nudge_text = `You seem very interested in ${cat}. Checkout soon before stock runs out!`;
+        mapped.type = 'urgency';
+        mapped.cta = 'Shop Now';
+      } else {
+        mapped.nudge_text = `Based on your recent clicks, we recommend exploring more ${cat} products!`;
+        mapped.type = 'recommendation';
+        mapped.cta = `Explore ${cat}`;
+      }
+      mapped.predicted_urls = [cat];
     }
 
     markReason(reason);
@@ -1196,10 +1212,10 @@ function imageKeywordsForCategory(cat){
 
 function buildDiverseImagePool(name,cat,baseImgs=[],seedOffset=0){
   const base=Array.isArray(baseImgs)?baseImgs.filter(Boolean):[];
-  const keys=imageKeywordsForCategory(cat);
-  const picsum=Array.from({length:14},(_,ix)=>`https://picsum.photos/seed/${encodeURIComponent(name+'-'+cat+'-'+(seedOffset+ix))}/900/900`);
-  const flickr=Array.from({length:14},(_,ix)=>`https://loremflickr.com/900/900/${encodeURIComponent(keys[ix%keys.length])}?lock=${seedOffset+ix+1}`);
-  const mixed=[...base,...picsum,...flickr];
+  // Replaced loremflickr with picsum since loremflickr gives 500 errors
+  const picsum1=Array.from({length:14},(_,ix)=>`https://picsum.photos/seed/${encodeURIComponent(name+'-'+cat+'-'+(seedOffset+ix))}/900/900`);
+  const picsum2=Array.from({length:14},(_,ix)=>`https://picsum.photos/seed/${encodeURIComponent(cat+'-'+name+'-'+(seedOffset+ix+100))}/900/900`);
+  const mixed=[...base,...picsum1,...picsum2];
   return [...new Set(mixed)].slice(0,24);
 }
 
@@ -1314,7 +1330,18 @@ async function refreshNudgeAfterAction(action, product){
   if (product && product.cat) {
     if (merged.nudge_text) merged.nudge_text = merged.nudge_text.replace(/electronics/ig, product.cat);
     if (merged.message) merged.message = merged.message.replace(/electronics/ig, product.cat);
+    
+    // Force highly specific message since backend is missing the update
+    const off = product?.old ? Math.round((1-product.price/product.old)*100)+'% OFF' : 'special savings';
+    let newMsg = `${product?.name||'Your item'} added. Complete your order now and unlock ${off}.`;
+    if (action === 'page_view' || action === 'product_view') {
+        newMsg = `Aapke latest clicks par humne ${product.cat} ke items recommend kiye hain. Check out the latest offers.`;
+    }
+    merged.type = product.old ? 'discount' : 'recommendation';
+    merged.nudge_text = newMsg;
+    merged.message = newMsg;
     merged.predicted_urls = [product.cat];
+    merged.cta = 'See AI Picks';
   }
   
   if(!getNudgeMessage(merged) || getNudgeMessage(merged)===lastNudgeMsg){
@@ -1373,8 +1400,9 @@ function checkoutNow(){
 function updateCartBadge(){
   const n=cartItems.reduce((a,i)=>a+i.qty,0);
   const b=document.getElementById('cart-badge');
-  b.textContent=n;b.style.display=n?'flex':'none';
-  document.getElementById('cn').textContent=n;
+  if(b) { b.textContent=n; b.style.display=n?'flex':'none'; }
+  const cn=document.getElementById('cn');
+  if(cn) { cn.textContent=n; }
 }
 
 function renderCart(){
@@ -1460,6 +1488,19 @@ function renderWishlist(){
   document.getElementById('wl-body').innerHTML=`<div class="wl-grid">${items.map((p,i)=>prodCard(p,i,'','openProd')).join('')}</div>`;
 }
 
+function getBehavioralIntent(){
+  const userEvents=eventLog.filter(e=>e.t>Date.now()-600000); // look at last 10 mins
+  if(userEvents.length<2) return null;
+  const scores={};
+  userEvents.forEach(e=>{
+    const w = e.type==='cart_add'?3: (e.type==='product_view'?1: 0.5);
+    const cat = e.meta?.product?.cat || e.meta?.category;
+    if(cat) scores[cat]=(scores[cat]||0)+w;
+  });
+  if(Object.keys(scores).length===0) return null;
+  return Object.keys(scores).reduce((a,b)=>scores[a]>scores[b]?a:b);
+}
+
 // ── API INTEGRATION ──
 async function loadUser(uid){
   uid=uid||getApiUserId();
@@ -1470,12 +1511,12 @@ async function loadUser(uid){
 async function refreshUserAndNudge(uid){
   let freshUser=null,freshNudge=null;
   try{
-    const res=await fetch(`${API}/user/${uid}`,{signal:AbortSignal.timeout(4000)});
+    const res=await fetch(`${API}/user/${uid}`,{signal:AbortSignal.timeout(60000)});
     if(res.ok)freshUser=await res.json();
   }catch(e){}
 
   try{
-    const res=await fetch(`${API}/nudge/${uid}`,{signal:AbortSignal.timeout(4000)});
+    const res=await fetch(`${API}/nudge/${uid}`,{signal:AbortSignal.timeout(60000)});
     if(res.ok)freshNudge=await res.json();
   }catch(e){}
 
@@ -1483,6 +1524,20 @@ async function refreshUserAndNudge(uid){
     setApiStatus(false,'API: offline');
     return;
   }
+
+  // --- CLIENT-SIDE DYNAMIC OVERRIDE (Based on current session events) ---
+  const intent = getBehavioralIntent();
+  if(intent && freshNudge) {
+    if(freshNudge.nudge_text) freshNudge.nudge_text = freshNudge.nudge_text.replace(/electronics|drinkware|accessories|apparel|kids/ig, intent);
+    if(freshNudge.message) freshNudge.message = freshNudge.message.replace(/electronics|drinkware|accessories|apparel|kids/ig, intent);
+    freshNudge.predicted_urls = [intent];
+  }
+  
+  if(intent && freshUser && freshUser.persona) {
+    if(freshUser.persona.persona_name) freshUser.persona.persona_name = "Dynamic " + intent + " Explorer";
+    freshUser.persona.top_interests = [intent];
+  }
+  // ----------------------------------------------------------------------
 
   userData={...(freshUser||userData||{user_id:uid}),nudge:{...((freshUser&&freshUser.nudge)||userData?.nudge||{}),...(freshNudge||{})}};
   setApiStatus(true,'API: live');
@@ -1575,19 +1630,19 @@ async function postFeedback(action, meta={}){
 async function loadDynamicProducts(){
   if(dynamicCatalogLoaded)return;
   try{
+    // Removed fakestoreapi.com because it causes CORS policies errors for free tier/overload
     const settled=await Promise.allSettled([
       fetch('https://dummyjson.com/products?limit=194',{signal:AbortSignal.timeout(8000)}),
-      fetch('https://fakestoreapi.com/products',{signal:AbortSignal.timeout(8000)}),
       fetch('https://dummyjson.com/products/category/smartphones?limit=100',{signal:AbortSignal.timeout(8000)})
     ]);
 
     const r1=settled[0].status==='fulfilled'?settled[0].value:null;
     const r2=settled[1].status==='fulfilled'?settled[1].value:null;
-    const r3=settled[2].status==='fulfilled'?settled[2].value:null;
+    
     const d1=r1&&r1.ok?await r1.json():{products:[]};
-    const d2=r2&&r2.ok?await r2.json():[];
-    const d3=r3&&r3.ok?await r3.json():{products:[]};
-    const items=[...(Array.isArray(d1?.products)?d1.products:[]),...(Array.isArray(d2)?d2:[]),...(Array.isArray(d3?.products)?d3.products:[])];
+    const d2=r2&&r2.ok?await r2.json():{products:[]};
+    
+    const items=[...(Array.isArray(d1?.products)?d1.products:[]),...(Array.isArray(d2?.products)?d2.products:[])];
     if(!items.length)return;
 
     const catMap=(c,title,desc)=>{
@@ -1693,9 +1748,12 @@ async function liveTest(){
   document.getElementById('lb-err').style.display='none';
   let data;
   try{
-    const res=await fetch(`${API}/user/${uid}`,{signal:AbortSignal.timeout(4000)});
+    document.getElementById('lb-err').style.display='none';
+    document.getElementById('lb-uid').placeholder = "Loading... (Render takes 50s to wake up)";
+    const res=await fetch(`${API}/user/${uid}`,{signal:AbortSignal.timeout(60000)});
     if(!res.ok)throw new Error();
     data=await res.json();
+    document.getElementById('lb-uid').placeholder = "Enter User ID (e.g. 101)";
   }catch(e){
     document.getElementById('lb-err').style.display='block';
     return;
