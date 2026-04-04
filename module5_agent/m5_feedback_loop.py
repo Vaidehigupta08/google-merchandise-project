@@ -121,8 +121,12 @@ def log_feedback(
 def _load_log() -> list:
     if not os.path.exists(LOG_PATH):
         return []
-    with open(LOG_PATH) as f:
-        return json.load(f)
+    try:
+        with open(LOG_PATH) as f:
+            return json.load(f)
+    except json.JSONDecodeError:
+        print("⚠️ reward_log.json corrupted. Resetting log.")
+        return []
 
 
 def compute_reward_weights() -> dict:
