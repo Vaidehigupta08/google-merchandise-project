@@ -3,6 +3,18 @@
 An end-to-end AI system that transforms raw user browsing data into **real-time personalized nudges** using behavioral modeling and generative prediction.
 
 ---
+## Deployed live api on render
+
+https://google-merchandise-project.onrender.com/
+
+---
+
+## Deployed live working app on netlify
+
+https://google-store-smart-ai-recomendation.netlify.app/
+
+---
+
 
 ## 🚀 Pipeline Overview
 
@@ -72,6 +84,8 @@ Instead of showing the same store to everyone,
 👉 each user gets a unique, adaptive experience based on their behavior.
 
 python -m http.server 5500
+
+---
 
 ## 🛠️ Tech Stack
 
